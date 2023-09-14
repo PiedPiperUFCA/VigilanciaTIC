@@ -1,0 +1,62 @@
+*{
+    font-family: 'Roboto';
+}
+h1 {
+    color: #4CAF50;
+}
+header {
+    padding: 10px 0;
+    text-align: center;
+}
+.nav-item{
+    font-size: large;
+}
+.navbar {
+    background-color: #fff; /* Branco */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+.navbar-nav {
+    margin-top: 10px;
+    margin-left: 65%;
+}
+
+.nav-link {
+    
+    color: #4CAF50; /* Verde */
+    margin-right: 20px; /* Espaçamento entre os itens do menu */
+    text-decoration: none; /* Remover sublinhado dos links */
+    transition: color 0.3s; /* Efeito de transição suave para a cor do texto */
+}
+
+.nav-link:hover {
+    color: #2E7D32; 
+}
+
+.navbar-nav .active .nav-link {
+    color: #fff; /* Texto branco para links ativos */
+    background-color: #4CAF50; /* Verde para links ativos */
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Estilos para o logotipo */
+.navbar-brand img {
+    max-height: 110px;
+}
+
+
+body {
+   
+    background-color: #fff; 
+    margin: 0;
+    padding: 0;
+}
+
+
+
