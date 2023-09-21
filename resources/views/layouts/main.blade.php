@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container">
-                <a class="navbar-brand" href="/"><img src="/img/logo.jpeg" alt="Logotipo" /><h1>Progama Eficiência</h1></a>
+                <a class="navbar-brand" href="/"><img src="/img/logo.jpeg" alt="Logotipo" />d</a>
                 
                 <div>
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
@@ -26,7 +26,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="/formularios" class="nav-link">Formularios</a>
+                            <a href="/formularios" class="nav-link">Formulários</a>
                         </li>
                         <li class="nav-item">
                             <a href="/suporte" class="nav-link">Suporte</a>

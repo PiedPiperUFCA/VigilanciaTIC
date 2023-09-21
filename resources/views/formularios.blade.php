@@ -10,7 +10,7 @@
 
         <!-- Campo de pesquisa -->
         <div class="mb-3">
-            <input type="text" id="searchInput" class="form-control" placeholder="Pesquisar...">
+            <input type="text" id="searchInput" class="form-control" placeholder="Pesquisar formulários...">
         </div>
 
         <div class="btn-container" id="btnContainer">
@@ -21,10 +21,7 @@
             <a href="formularios/influenza" class="btn btn-success">Febre Amarela - SINAN</a>
             <a href="formularios/influenza" class="btn btn-primary">Meningite - SINAN</a>
             <a href="formularios/influenza" class="btn btn-primary">Intoxicação Exógena - SINAN</a>
-            <a href="formularios/influenza" class="btn btn-success">Paralisia] / Poliomelite - SINAN</a>
-            <a href="formularios/influenza" class="btn btn-danger">Dengue - SINAN</a>
-            <a href="formularios/influenza" class="btn btn-success">Teste / Poliomelite - SINAN</a>
-            <a href="formularios/influenza" class="btn btn-danger">Dengue - SINAN</a>
+
 
         </div>
     </div>
