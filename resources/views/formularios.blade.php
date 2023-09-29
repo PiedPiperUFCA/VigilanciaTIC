@@ -28,7 +28,7 @@
 
     <script src="{{ asset('js/buscaForms.js') }}"></script>
 
-    </script>
+
 
 
 </body>

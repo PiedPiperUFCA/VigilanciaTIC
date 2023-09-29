@@ -1,3 +1,23 @@
 *{
     font-family: 'Roboto';
+    
 }
+datalist {
+    max-height: 150px; /* Defina a altura máxima do datalist */
+    overflow-y: auto; /* Adicione uma barra de rolagem vertical quando necessário */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Estilize as opções dentro do datalist */
+  option {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* Estilize a opção selecionada */
+  option:checked {
+    background-color: #007bff; /* Cor de fundo quando selecionado */
+    color: #fff; /* Cor do texto quando selecionado */
+  }

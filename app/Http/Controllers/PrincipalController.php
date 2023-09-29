@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class FormularioController extends Controller
+class PrincipalController extends Controller
 {
     public function index(){
        
@@ -18,10 +18,4 @@ class FormularioController extends Controller
        
         return view('suporte');
     }
-
-    public function influenza(){
-       
-        return view('forms.influenza');
-    }
-
 }

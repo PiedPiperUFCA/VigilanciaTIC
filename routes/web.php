@@ -2,9 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\FormularioController;
+use App\Http\Controllers\PrincipalController;
+use App\Http\Controllers\FormulariosController;
 
-Route::get('/',[FormularioController::class, 'index']);
-Route::get('/formularios',[FormularioController::class, 'forms']);
-Route::get('/suporte',[FormularioController::class, 'suporte']);
-Route::get('formularios/influenza',[FormularioController::class, 'influenza']);
+
+Route::get('/',[PrincipalController::class, 'index']);
+Route::get('/formularios',[PrincipalController::class, 'forms']);
+Route::get('/suporte',[PrincipalController::class, 'suporte']);
+
+Route::get('formularios/influenza',[FormulariosController::class, 'influenza']);
