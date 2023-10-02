@@ -11,3 +11,8 @@ Route::get('/formularios',[PrincipalController::class, 'forms']);
 Route::get('/suporte',[PrincipalController::class, 'suporte']);
 
 Route::get('formularios/influenza',[FormulariosController::class, 'influenza']);
+
+
+# rotas para sb admin
+Route::get('/vigep-admin',[\App\Http\Controllers\HomeController::class,'index'])->name('home');
+Route::resource('/forms',\App\Http\Controllers\FormsController::class);
