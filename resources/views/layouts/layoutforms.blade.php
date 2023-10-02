@@ -5,16 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="{{ asset('css/forms.css') }}" rel="stylesheet">
-    <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-   
+
 </head>
 
 <body class="antialiased">
-    
+
     <h1 style="text-align: center;">SINAN</h1>
     <p style="text-align: center;">SISTEMA DE INFORMAÇÃO DE AGRAVOS DE NOTIFICAÇÃO</p>
     <form action="cad.php" method="get">
@@ -52,12 +50,16 @@
                 <div class="form-row">
                     <div class="form-group col-md-1">
                         <label for="UF">4 - UF</label>
-                        <input type="text" name="UF" id="UF" class="form-control">
+                        <select id="ufNotificacao" class="form-control" onchange="buscarCidades()">
+                            <option value="">Selecione um estado</option>
+                        </select>
                     </div>
 
                     <div class="form-group col-md-8">
                         <label for="Município de Notificação">5 - Município de Notificação</label>
-                        <input type="text" name="Município de Notificação" id="Município de Notificação" class="form-control">
+                        <select class="form-control" id="municipioNotificacao">
+                            <option value="">Selecione um estado primeiro</option>
+                        </select>
                     </div>
 
                     <div class="form-group col-md-3">
@@ -70,13 +72,13 @@
                     <div class="form-group col-md-6">
                         <label for="Unidade de Saúde (ou outra fonte notificadora)">6 - Unidade de Saúde (ou outra fonte notificadora)</label>
                         <input id='unidSaude' list='sugestionUnidSaude' type="text" name="Unidade de Saúde (ou outra fonte notificadora)" class="form-control">
-                        <datalist id="sugestionUnidSaude">
-                        </datalist>
+                        <datalist id="sugestionUnidSaude"></datalist>
+
                     </div>
 
                     <div class="form-group col-md-3">
                         <label for="Código">Código</label>
-                        <input type="text" name="Código" id="Código" class="form-control">
+                        <input type="text" id="codUnidSaude" class="form-control">
                     </div>
 
                     <div class="form-group col-md-3">
@@ -289,4 +291,5 @@
 </body>
 <script src="{{ asset('js/buscaUnidSaude.js') }}"></script>
 <script src="{{ asset('js/getAge.js') }}"></script>
+<script src="{{ asset('js/buscaCidade.js') }}"></script>
 </html>
