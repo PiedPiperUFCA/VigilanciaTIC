@@ -1,14 +1,13 @@
 @extends('layouts.admin')
 
-@section('title_page','Cadastramento de ficha')
-@section('typeNotification','INFLUENZA HUMANA POR NOVO SUBTIPO (PANDÊMICO)')
+@section('title_page','Cadastramento de fichas de notificações')
+@section('description_page','Realize a pesquisa da ficha que deseja preencher!')
 
 @section('content')
 
     <link href="{{ asset('css/pagformularios.css') }}" rel="stylesheet">
 
     <div class="container">
-        <h1 class="text-center">Escolha um Formulário</h1>
 
         <!-- Campo de pesquisa -->
         <div class="mb-3">
