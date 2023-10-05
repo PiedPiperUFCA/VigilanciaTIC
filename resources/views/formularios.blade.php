@@ -15,7 +15,7 @@
 
         <div class="btn-container" id="btnContainer">
             <a href="formularios/influenza" class="btn btn-primary">Influenza - SINAN</a>
-            <a href="formularios/influenza" class="btn btn-success">Paralisia Flácida Aguda / Poliomelite - SINAN</a>
+            <a href="formularios/antirabico" class="btn btn-success">ANTI-RÁBICO HUMANO - SINAN</a>
             <a href="formularios/influenza" class="btn btn-danger">Dengue - SINAN</a>
             <a href="formularios/influenza" class="btn btn-warning">Zika - SINAN</a>
             <a href="formularios/influenza" class="btn btn-success">Febre Amarela - SINAN</a>
