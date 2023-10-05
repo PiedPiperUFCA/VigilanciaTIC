@@ -44,15 +44,14 @@
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Ações para notificações</h6>
                 <a class="collapse-item" href="{{ route('forms.index') }}">Cadastrar ficha</a>
-                <a class="collapse-item" href="#">Editar ficha</a>
-                <a class="collapse-item" href="#">Histórico de fichas</a>
+                <a class="collapse-item" href="/history">Editar ficha</a>
             </div>
         </div>
     </li>
 
     <li class="nav-item">
         <a class="nav-link" href="#">
-            <i class="fas fa-fw fa-chart-area"></i>
+            <i class="fa-solid fa-shuffle"></i>
             <span>Transferir dados</span></a>
     </li>
 

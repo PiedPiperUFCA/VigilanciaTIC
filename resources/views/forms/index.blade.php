@@ -1,6 +1,6 @@
-@extends('layouts.admin')
+@extends('layouts.main-sbadmin')
 
-@section('title_page','Cadastramento de fichas de notificações')
+@section('subtitle_page','Cadastramento de fichas de notificações')
 @section('description_page','Realize a pesquisa da ficha que deseja preencher!')
 
 @section('content')

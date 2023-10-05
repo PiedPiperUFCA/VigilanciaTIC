@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
 
@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>{{ env('APP_NAME') }}</title>
+    <title>SiNE - VIGEP JDN</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{ asset('libs/sbadmin/fontawesome/css/all.min.css') }}" rel="stylesheet" type="text/css">
@@ -140,7 +140,7 @@
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Ao selecionar <strong>sair</strong> para utilizar novamente o sistema deverá ser realizado novo login, com as respectivas credenciais e senha!</div>
+                <div class="modal-body">Ao selecionar <strong>sair</strong> será necessário realizar novo login com suas credeciais para utilizar o sistema novamente.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
                     <a class="btn btn-primary" href="login.html">Sair</a>
@@ -155,6 +155,19 @@
 
     <!-- Custom scripts for all pages-->
     <script src="{{ asset('libs/sbadmin/js/sb-admin-2.min.js') }}"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="{{ asset('libs/sbadmin/jquery-easing/jquery.easing.min.js') }}"></script>
+
+    <!-- Page level plugins -->
+    <script src="{{ asset('libs/sbadmin/chart.js/Chart.min.js') }}"></script>
+    <script src="{{ asset('libs/sbadmin/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('libs/sbadmin/datatables/dataTables.bootstrap4.min.js') }}"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="{{ asset('libs/sbadmin/js/demo/chart-area-demo.js') }}"></script>
+    <script src="{{ asset('libs/sbadmin/js/demo/chart-pie-demo.js') }}"></script>
+    <script src="{{ asset('libs/sbadmin/js/demo/datatables-demo.js') }}"></script>
 
 
 </body>

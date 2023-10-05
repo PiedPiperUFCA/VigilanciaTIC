@@ -4,10 +4,10 @@
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-start">
 
-       <h3 class="text-xl-left">@yield('title_page')</h3>
+       <h3 class="text-xl-left">@yield('subtitle_page')</h3>
 
     </div>
-    <div class="d-sm-flex align-items-center justify-content-start mb-4">
+    <div class="d-sm-flex align-items-center justify-content-start mb-1">
 
         <p>@yield('description_page')</p>
 
