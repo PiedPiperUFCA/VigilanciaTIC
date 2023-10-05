@@ -29,17 +29,17 @@
                 <br>
                 <div class="form-group">
                     <label for="Tipo de Notificação">1 - Tipo de Notificação</label>
-                    <input value="@yield('typeNotification')" type="text" name="Tipo de Notificação" id="typeNotificationInput" class="form-control">
+                    <input type="text" name="Tipo de Notificação" id="typeNotificationInput" class="form-control">
 
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="Agravo/Doença">2 - Agravo/Doença</label>
-                        <input type="text" name="Agravo/Doençao" id="Agravo/Doença" class="form-control""></div>
+                        <input value="@yield('typeNotification')" type="text" name="Agravo/Doençao" id="Agravo/Doença" class="form-control""></div>
 
                     <div class=" form-group col-md-3">
                         <label for="Código (CID)">Código (CID)</label>
-                        <input type="text" name="Código (CID)" id="Código (CID)" class="form-control">
+                        <input type="text" value="@yield('codCidNotification')" name="Código (CID)" id="Código (CID)" class="form-control">
                     </div>
 
                     <div class="form-group col-md-3">
@@ -50,14 +50,14 @@
                 <div class="form-row">
                     <div class="form-group col-md-1">
                         <label for="UF">4 - UF</label>
-                        <select id="ufNotificacao" class="form-control" onchange="buscarCidades()">
+                        <select id="ufNotification" class="form-control" onchange="fetchCities()">
                             <option value="">Selecione um estado</option>
                         </select>
                     </div>
 
                     <div class="form-group col-md-8">
                         <label for="Município de Notificação">5 - Município de Notificação</label>
-                        <select class="form-control" id="municipioNotificacao">
+                        <select class="form-control" id="cityNotification">
                             <option value="">Selecione um estado primeiro</option>
                         </select>
                     </div>
@@ -94,6 +94,7 @@
                 <legend style="text-align: center;"><strong>Notificação Individual</strong></legend>
                 <br>
                 <div class="form-row">
+
                     <div class="form-group col-md-9">
                         <label for="nome_do_paciente">8 - Nome do Paciente</label>
                         <input type="text" name="nome_do_paciente" id="nome_do_paciente" class="form-control">
@@ -101,14 +102,14 @@
 
                     <div class="form-group col-md-3">
                         <label for="data_de_nascimento">9 - Data de Nascimento</label>
-                        <input type="date" name="data_de_nascimento" id="data_de_nascimento" class="form-control" oninput="calcularIdade()">
+                        <input type="date" id="birthDate" class="form-control">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group col-md-3">
-                        <label for="ou_idade">10 - (ou) Idade</label>
-                        <input type="text" name="ou_idade" id="ou_idade" class="form-control" readonly>
+                        <label for="age">10 - (ou) Idade</label>
+                        <input type="text" id="age" class="form-control" readonly>
                     </div>
 
                     <div class="form-group col-md-3">
@@ -218,7 +219,7 @@
 
                     <div class="form-group col-md-6">
                         <label for="Logradouro">21 - Logradouro</label>
-                        <input type="text" name="Logradouro" id="Logradouro" class="form-control">
+                        <input type="text" name="Logradouro" id="address" class="form-control">
                     </div>
 
                     <div class="form-group col-md-3">
@@ -265,7 +266,7 @@
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="(DDD) Telefone">28 - (DDD) Telefone</label>
-                        <input type="text" name="(DDD) Telefone" id="(DDD) Telefone" class="form-control">
+                        <input type="text" id="numberPhone" onkeyup="formatPhoneNumber(this)" class="form-control">
                     </div>
 
                     <div class="form-group col-md-4">
@@ -289,7 +290,9 @@
         </div>
         @yield('content')
 </body>
-<script src="{{ asset('js/buscaUnidSaude.js') }}"></script>
-<script src="{{ asset('js/getAge.js') }}"></script>
-<script src="{{ asset('js/buscaCidade.js') }}"></script>
+<script src="{{ asset('js/scriptForms/getCodeSugestion.js') }}"></script>
+<script src="{{ asset('js/scriptForms/getAge.js') }}"></script>
+<script src="{{ asset('js/scriptForms/getCityStateNotification.js') }}"></script>
+<script src="{{ asset('js/scriptForms/formatNumberPhone.js') }}"></script>
+
 </html>
