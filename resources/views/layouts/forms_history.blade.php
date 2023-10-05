@@ -11,7 +11,7 @@
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">DataTable - Histórico de fichas</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Histórico de fichas</h6>
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -23,6 +23,7 @@
                         <th>Agravo (CID)</th>
                         <th>Notificado em</th>
                         <th>Status</th>
+                        <th></th>
                     </tr>
                     </thead>
                     <tfoot>
@@ -32,6 +33,7 @@
                         <th>Agravo (CID)</th>
                         <th>Notificado em</th>
                         <th>Status</th>
+                        <th></th>
                     </tr>
                     </tfoot>
                     <tbody>
@@ -41,6 +43,11 @@
                         <td>W 64</td>
                         <td>20/08/2023</td>
                         <td>Notificado</td>
+                        <td>
+                            <a href="#" class="btn btn-danger btn-circle btn-sm">
+                                <i class="fa-regular fa-pen-to-square"></i>
+                            </a>
+                        </td>
                     </tr>
                     <tr>
                         <td>207 8245 1332 0004</td>
@@ -48,6 +55,11 @@
                         <td>W 64</td>
                         <td>20/09/2023</td>
                         <td>Em investigação</td>
+                        <td>
+                            <a href="#" class="btn btn-danger btn-circle btn-sm">
+                                <i class="fa-regular fa-pen-to-square"></i>
+                            </a>
+                        </td>
                     </tr>
                     <tr>
                         <td>816 9861 8112 0008</td>
@@ -55,6 +67,11 @@
                         <td>San Francisco</td>
                         <td>25/12/2023</td>
                         <td>Concluído</td>
+                        <td>
+                            <a href="#" class="btn btn-danger btn-circle btn-sm">
+                                <i class="fa-regular fa-pen-to-square"></i>
+                            </a>
+                        </td>
                     </tr>
                     </tbody>
                 </table>

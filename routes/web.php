@@ -19,3 +19,6 @@ Route::resource('/forms',\App\Http\Controllers\FormsController::class);
 Route::get('/history', function (){
     return view('layouts.forms_history');
 });
+Route::get('/login', function (){
+   return view('layouts.login');
+});
