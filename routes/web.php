@@ -16,9 +16,6 @@ Route::get('formularios/influenza',[FormulariosController::class, 'influenza']);
 # rotas para sb admin
 Route::get('/vigep-admin',[\App\Http\Controllers\HomeController::class,'index'])->name('home');
 Route::resource('/forms',\App\Http\Controllers\FormsController::class);
-Route::get('/history', function (){
-    return view('layouts.forms_history');
-});
-Route::get('/login', function (){
-   return view('layouts.login');
-});
+Route::get('/history', function (){ return view('layouts.forms_history'); });
+Route::get('/login', function (){ return view('layouts.login'); });
+Route::get('/influenza', function (){ return view('forms.influenza-teste'); });
